@@ -1,6 +1,7 @@
 # Tensorflow Object Detection Models
 
  Tensorflow Object Detection API : https://github.com/tensorflow/models.git
+  - 1.6version (https://github.com/tensorflow/models/tree/adfd5a3aca41638aa9fb297c5095f33d64446d8f)
  1) 상기 model을 다운로드 받는다. branch에서 해당 tensorflow 버전에 맞게 받을 것(r1.7version)
  https://github.com/SIAnalytics/simplified_rbox_cnn.git 
  2) 상기 model을 1)번 model>research>object_detection 폴더에 덮어쓰기
