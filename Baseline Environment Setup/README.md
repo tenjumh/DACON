@@ -66,13 +66,14 @@ python create_dataset.py --src_dir=D:/tensorflow1/models/research/object_detecti
 - 학습할 때, GPU RAM이 12G이하일 경우 OOM error가 발생할 수 있다. GPU RAM 부족 에러로 tfrecords파일 생성 시 patch_size를 변경해주서 기본 768보다 작게 512 등으로 줄여줘야 한다.
 - 보다 작은 사이즈의 패치 이미지로 학습을 한다.
 ![image](https://github.com/tenjumh/DACON/blob/master/images/create_dataset_patch_size.png)
+
 10. 학습하기
 	1) 'fine_tune_checkpoint_path'를 사전 훈련된 모델로 설정 (faster_rcnn_resnet101_coco_11_06_2017)
 	http://storage.googleapis.com/download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz
-	2)object_detection/configs/rbox_cnn_resnet101.config 열어서 위치 및 경로 설정
-	3)object_detection/train.tfrecords 위치
+	2) object_detection/configs/rbox_cnn_resnet101.config 열어서 위치 및 경로 설정
+	3) object_detection/train.tfrecords 위치
 	object_detection/label_map.pbtxt
-	4)train.py 실행
+	4) train.py 실행
 ```
 	python train.py --pipeline_config_path=configs/rbox_cnn_resnet101.config --train_dir=training/
 ```
