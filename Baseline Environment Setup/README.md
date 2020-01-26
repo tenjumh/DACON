@@ -6,6 +6,9 @@ Tensorflow Object Detection API : https://github.com/tensorflow/models.git
  https://github.com/SIAnalytics/simplified_rbox_cnn.git 
  2) 상기 model을 1)번 model>research>object_detection 폴더에 덮어쓰기
  3) 반드시 CUDA 9.0, tensorflow버전 등을 맞춰준다.
+ - 9.0 : https://developer.nvidia.com/cuda-90-download-archive
+ - 9.2 : https://developer.nvidia.com/cuda-92-download-archive
+ 
  
 환경설정
 1. CUDA9.0 버전,  Tensorflow 1.6 GPU버전은 CUDA9.0에서 실행됨
